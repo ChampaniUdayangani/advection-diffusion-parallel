@@ -1,0 +1,15 @@
+#PBS -l walltime=00:03:00
+#PBS -N fdm_openmp_v3
+#PBS -l nodes=1
+
+export OMP_NUM_THREADS=24
+
+cd $PBS_O_WORKDIR
+
+cat $PBS_NODEFILE
+
+
+./openmp_v3
+
+
+
